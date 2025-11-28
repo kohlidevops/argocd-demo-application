@@ -1,7 +1,9 @@
-# Simple Nginx-based app for demo
-FROM nginx:1.27
+FROM golang:1.22 AS builder
+WORKDIR /app
+COPY app/ .
+RUN go build -o server main.go
 
-# Copy static HTML (optional)
-COPY app /usr/share/nginx/html
-
+FROM debian:stable-slim
+COPY --from=builder /app/server /usr/local/bin/server
+CMD ["server"]
 EXPOSE 80
