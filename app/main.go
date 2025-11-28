@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "Hello from ArgoCD + GitHub Actions + GitOps!")
+		fmt.Fprintln(w, "This is Latchu! Hello from ArgoCD + GitHub Actions + GitOps!")
 	})
 
 	fmt.Println("Server running on port 80")
