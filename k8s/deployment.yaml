@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: latchudevops/argocd-demo-app:latest   # GitHub Actions updates this
+        image: latchudevops/argocd-demo-app:77d148accc31b3107365b46a08d0f0702eb07031
         ports:
         - containerPort: 80
 ---
