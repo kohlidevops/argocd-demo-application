@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: latchudevops/argocd-demo-app:3c81049eeb6152ea3caf71b1d860370f71e6b422
+        image: latchudevops/argocd-demo-app:780e0f9bf323810e2acbbb60b8414b5e34b16af6
         ports:
         - containerPort: 80
 ---
